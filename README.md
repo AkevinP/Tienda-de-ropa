@@ -18,17 +18,17 @@ Se han implementado las siguientes colecciones:
 
 Cada colección tiene implementadas las siguientes operaciones:
 
-🔺1. Insertar un dato
-🔺2. Insertar varios datos
-🔺3. Actualizar un dato
-🔺4. Eliminar datos
+1. Insertar un dato
+2. Insertar varios datos
+3. Actualizar un dato
+4. Eliminar datos
 
 Además, el proyecto incluye las siguientes consultas:
 
-🔺- Obtener la cantidad vendida de prendas por fecha.
-🔺- Listar las marcas que han registrado al menos una venta.
-🔺- Mostrar prendas vendidas y su stock restante.
-🔺- Mostrar el top 5 de marcas más vendidas.
+- Obtener la cantidad vendida de prendas por fecha.
+- Listar las marcas que han registrado al menos una venta.
+- Mostrar prendas vendidas y su stock restante.
+- Mostrar el top 5 de marcas más vendidas.
 
 ## 🧪 Ejemplos JSON de cada colección
 
