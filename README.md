@@ -1,45 +1,88 @@
-# 🛍️ Tienda de Ropa 
+# 🛍️ Tienda de Ropa — Base de Datos MongoDB
 
-Este proyecto consiste en una base de datos para una tienda de ropa, desarrollada con MongoDB. Contiene las colecciones necesarias para gestionar **usuarios, marcas, prendas y ventas**.
+Este proyecto implementa una base de datos para una tienda de ropa, utilizando **MongoDB**. Está diseñada para administrar colecciones relacionadas con **clientes, productos, marcas y ventas**, todo desde un único script interactivo.
+
+---
 
 ## 📁 Estructura del Proyecto
 
-En su estructura contamos con 2  archivos importantes los cuales son:
+El repositorio contiene los siguientes archivos esenciales:
 
-1. Tienda.js= Con el cual se logra ver la estructura de la programación con la que se realizo.
-2. Env= Este archivo es la ruta con la cual se dirige hacia Mongodb Compass.
+- `📜 tienda.js`: Contiene toda la lógica del script, incluyendo creación de colecciones, inserciones, consultas y operaciones CRUD.
+- `🔐 .env`: Archivo de configuración que almacena de forma segura la URI de conexión a MongoDB Atlas. **(¡No se debe subir a GitHub!)**
 
-## 🧩 Colecciones
+---
 
-Se han implementado las siguientes colecciones:
+## 🧩 Colecciones disponibles
 
-- **👤usuarios**: Información básica de los clientes.
-- **✅marcas**: Marcas de ropa disponibles.
-- **👕prendas**: Productos de ropa en stock.
-- **💸ventas**: Registro de ventas realizadas.
+El sistema cuenta con 4 colecciones bien diferenciadas:
 
-## 🔧 Operaciones Incluidas
+- 👤 `usuarios`: Datos básicos de los clientes (nombre, correo electrónico).
+- 👟 `marcas`: Información de marcas de ropa (nombre, país de origen).
+- 👕 `prendas`: Productos disponibles en stock (nombre, marca, precio, unidades).
+- 💸 `ventas`: Registro de ventas con relación directa a las prendas.
 
-Cada colección tiene implementadas las siguientes operaciones:
+---
 
-1. Insertar un dato
-2. Insertar varios datos
-3. Actualizar un dato
-4. Eliminar datos
+## 🔧 Operaciones implementadas
 
-Además, el proyecto incluye las siguientes consultas:
+Cada colección incluye operaciones clave de manipulación y consulta:
 
-- Obtener la cantidad vendida de prendas por fecha.
-- Listar las marcas que han registrado al menos una venta.
-- Mostrar prendas vendidas y su stock restante.
-- Mostrar el top 5 de marcas más vendidas.
+- ✅ Inserción de uno o múltiples documentos
+- 🔁 Actualización de campos
+- 🗑️ Eliminación de registros
+- 📊 Consultas especializadas:
 
-## 🧪 Ejemplos JSON de cada colección
+  - Total vendido por prenda en una fecha específica
+  - Listado de marcas con al menos una venta
+  - Cálculo de stock restante por prenda
+  - Ranking de las 5 marcas más vendidas
 
-### usuarios
+---
+
+## 🧪 Ejemplo de documento en cada colección
+
+### 👤 usuarios
 ```json
 {
   "nombre": "Ana",
   "email": "ana@mail.com"
+}
+👟 marcas
+{
+  "nombre": "Nike",
+  "pais": "EEUU"
+}
+
+👕 prendas
+{
+  "nombre": "Camiseta",
+  "marca": "Nike",
+  "stock": 50,
+  "precio": 20
+}
+💸 ventas
+{
+  "prendaId": "ObjectId(...)",
+  "cantidad": 5,
+  "fechaVenta": "2025-06-01"
+}
+
+🚀 ¿Cómo ejecutar el proyecto?
+Cloná el repositorio
+
+Instalá las dependencias:
+
+bash
+npm install
+Configurá tu archivo .env con la URI de MongoDB Atlas
+
+Ejecutá el script:
+
+bash
+node tienda.js
+
+
+Una vez pegado todo, guardás el archivo ¡y listo! Ya tenés un `README.md` claro, vistoso y listo para compartir tu proyecto con el mundo. ¿Querés que también le agregue una sección opcional de “Mejoras futuras” o “Contribuciones”?
 
 
