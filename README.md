@@ -1,9 +1,13 @@
 # 🛍️ Tienda de Ropa 
 
-Este proyecto consiste en una base de datos para una tienda de ropa, desarrollada con MongoDB. Contiene las colecciones necesarias para gestionar **usuarios, marcas, prendas y ventas**,.
+Este proyecto consiste en una base de datos para una tienda de ropa, desarrollada con MongoDB. Contiene las colecciones necesarias para gestionar **usuarios, marcas, prendas y ventas**.
 
 ## 📁 Estructura del Proyecto
 
+En su estructura contamos con 2  archivos importantes los cuales son:
+
+1. Tienda.js= Con el cual se logra ver la estructura de la programación con la que se realizo.
+2. Env= Este archivo es la ruta con la cual se dirige hacia Mongodb Compass.
 
 ## 🧩 Colecciones
 
