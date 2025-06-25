@@ -53,4 +53,3 @@ ventas.aggregate([
   { $limit: 5 }
 ]);
 
-
