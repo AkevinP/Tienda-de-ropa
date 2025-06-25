@@ -42,18 +42,4 @@ Además, el proyecto incluye las siguientes consultas:
   "nombre": "Ana",
   "email": "ana@mail.com"
 
-// Cantidad vendida por prenda en 2025-06-01
-ventas.aggregate([
-  { $match: { fechaVenta: { $gte: ..., $lt: ... } } },
-  { $group: { _id: '$prendaId', totalVendido: { $sum: '$cantidad' } } }
-]);
-
-// Top 5 marcas más vendidas
-ventas.aggregate([
-  { $lookup: { from: 'prendas', localField: 'prendaId', foreignField: '_id', as: 'prenda' } },
-  { $unwind: '$prenda' },
-  { $group: { _id: '$prenda.marca', totalVentas: { $sum: '$cantidad' } } },
-  { $sort: { totalVentas: -1 } },
-  { $limit: 5 }
-]);
 
