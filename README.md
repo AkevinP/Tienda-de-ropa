@@ -50,19 +50,16 @@ Cada colección incluye operaciones clave de manipulación y consulta:
 }
 ```
 ## 🚀 ¿Cómo ejecutar el proyecto?
-Cloná el repositorio
+1.Cloná el repositorio
+2.Instalá las dependencias:
 
-Instalá las dependencias:
+*bash
+*npm install
+*Configurá tu archivo .env con la URI de MongoDB Atlas
 
-bash
-npm install
-Configurá tu archivo .env con la URI de MongoDB Atlas
-
-Ejecutá el script:
-
+3.Ejecutá el script:
 bash
 node tienda.js
-
 
 Una vez pegado todo, guardás el archivo ¡y listo! Ya tenés un `README.md` claro, vistoso y listo para compartir tu proyecto con el mundo. ¿Querés que también le agregue una sección opcional de “Mejoras futuras” o “Contribuciones”?
 
