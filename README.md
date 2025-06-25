@@ -48,28 +48,8 @@ Cada colección incluye operaciones clave de manipulación y consulta:
   "nombre": "Ana",
   "email": "ana@mail.com"
 }
-👟 marcas
-```json
-{
-  "nombre": "Nike",
-  "pais": "EEUU"
-}
-
-```👕 prendas
-{
-  "nombre": "Camiseta",
-  "marca": "Nike",
-  "stock": 50,
-  "precio": 20
-}
-```💸 ventas
-{
-  "prendaId": "ObjectId(...)",
-  "cantidad": 5,
-  "fechaVenta": "2025-06-01"
-}
 ```
-🚀 ¿Cómo ejecutar el proyecto?
+## 🚀 ¿Cómo ejecutar el proyecto?
 Cloná el repositorio
 
 Instalá las dependencias:
