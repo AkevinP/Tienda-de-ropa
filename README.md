@@ -61,6 +61,73 @@ Cada colección incluye operaciones clave de manipulación y consulta:
 bash
 node tienda.js
 
-Una vez pegado todo, guardás el archivo ¡y listo! Ya tenés un `README.md` claro, vistoso y listo para compartir tu proyecto con el mundo. ¿Querés que también le agregue una sección opcional de “Mejoras futuras” o “Contribuciones”?
+## 🚀 Tecnologías utilizadas
+
+- Python 3
+- Flask
+- MongoDB (via PyMongo)
+- Postman (para pruebas)
+- dotenv (para variables de entorno)
+
+
+## ⚙️ Instalación
+
+1. Clona el repositorio:
+   git clone https://github.com/tu-usuario/tiendaderopa.git
+   cd tiendaderopa/API/V1
+
+2. Crea y activa un entorno virtual:
+   python -m venv .venv
+   .venv\Scripts\activate  # En Windows
+
+3. Instala dependencias:
+   pip install -r requirements.txt
+
+4. Configura tu archivo `.env`:
+   MONGODB_URI=mongodb://localhost:27017
+
+5. Ejecuta el servidor:
+   python run.py
+
+## 📮 Endpoints disponibles
+
+### Usuarios
+- GET /api/v1/usuarios
+- POST /api/v1/usuarios
+- PUT /api/v1/usuarios/<id>
+- DELETE /api/v1/usuarios/<id>
+
+### Marcas
+- GET /api/v1/marcas
+- POST /api/v1/marcas
+- PUT /api/v1/marcas/<id>
+- DELETE /api/v1/marcas/<id>
+
+### Prendas
+- GET /api/v1/prendas
+- POST /api/v1/prendas
+- PUT /api/v1/prendas/<id>
+- DELETE /api/v1/prendas/<id>
+
+### Ventas
+- GET /api/v1/ventas
+- POST /api/v1/ventas
+- PUT /api/v1/ventas/<id>
+- DELETE /api/v1/ventas/<id>
+
+## 🧪 Pruebas con Postman
+
+1. Abre Postman y crea una colección llamada Tienda de Ropa
+2. Agrega las solicitudes con sus respectivos métodos y URLs
+3. Usa Content-Type: application/json en el header
+4. Envía cuerpos en formato JSON para POST y PUT
+
+## 📌 Notas
+
+- Asegúrate de que los IDs usados en ventas correspondan a documentos existentes en usuarios y prendas.
+- El proyecto está en modo desarrollo (debug=True), no usar en producción sin ajustes.
+
+
+
 
 
