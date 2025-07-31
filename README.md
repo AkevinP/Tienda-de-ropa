@@ -119,13 +119,6 @@ node tienda.js
 
 1. Abre Postman y crea una colección llamada Tienda de Ropa
 2. Agrega las solicitudes con sus respectivos métodos y URLs
-3. Usa Content-Type: application/json en el header
-4. Envía cuerpos en formato JSON para POST y PUT
-
-## 📌 Notas
-
-- Asegúrate de que los IDs usados en ventas correspondan a documentos existentes en usuarios y prendas.
-- El proyecto está en modo desarrollo (debug=True), no usar en producción sin ajustes.
 
 
 
