@@ -121,6 +121,17 @@ node tienda.js
 2. Agrega las solicitudes con sus respectivos métodos y URLs
 
 
+## Ejemplos de URL
+
+http://127.0.0.1:5000/api/v1/marcas/ 
+
+http://127.0.0.1:5000/api/v1/prendas
+
+http://127.0.0.1:5000/api/v1/usuarios/68617b4dfc695409381fd7e8
+
+http://127.0.0.1:5000/api/v1/usuarios/68617b4dfc695409381fd7e9
+
+
 
 
 
