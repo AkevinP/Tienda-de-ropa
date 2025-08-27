@@ -131,10 +131,10 @@ http://127.0.0.1:5000/api/v1/usuarios/68617b4dfc695409381fd7e8
 
 http://127.0.0.1:5000/api/v1/usuarios/68617b4dfc695409381fd7e9
 
-Front-End Interactivo con AJAX
+## Front-End Interactivo con AJAX
 Este proyecto incluye un front-end desarrollado en HTML, CSS y JavaScript, utilizando AJAX para interactuar con los endpoints de la API. También se emplea Bootstrap para mejorar la presentación visual.
 
-🧭 Funcionalidades del Front-End
+## 🧭 Funcionalidades del Front-End
 Visualización de prendas en una tabla dinámica
 
 Formularios para agregar, editar y eliminar prendas
@@ -142,11 +142,11 @@ Formularios para agregar, editar y eliminar prendas
 CRUD completo para marcas, usuarios y ventas
 
 Actualización automática de datos sin recargar la página
-
+## 
 📊 Vistas Especiales
 El front-end también permite visualizar información clave mediante tablas interactivas:
 
-✅ Listado de marcas con al menos una venta
+## ✅ Listado de marcas con al menos una venta
 
 👕 Prendas vendidas y su stock restante
 
@@ -166,7 +166,7 @@ Flask como backend
 MongoDB como base de datos
 
 
-🚀 Cómo probar el Front-End
+## 🚀 Cómo probar el Front-End
 Asegurate de tener el backend corriendo (python run.py)
 
 Abrí index.html en tu navegador
